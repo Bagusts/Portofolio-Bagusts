@@ -1,33 +1,43 @@
 body {
     margin: 0;
-    font-family: 'VT323', monospace;
 }
 p{
     font-size: 20px;
+}
+.pjusty{
+    text-align: justify;
 }
 .table{
     width: 100%;
     height: auto;
     background-color: white;
-    border-radius:15px;
+    border-radius:10px;
     color: #666699;
-    padding: 5px;
+    padding: 3px 0;
+    text-decoration: none;
 }
-.kotak_artikel{
-    width: 32%;
-    height: auto;
+.table p{
+    margin: 0;
+}
+.table a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #666699;
+}
+.btnartikel{
     background-color: white;
-    border-radius:15px;
-    color: #666699;
-    padding: 1px;
-    text-decoration: none;
-    margin-right: 1%;
-    margin-top: 1%;
+    border-radius:10px;
+    width: 100%;
 }
-.kotak_artikel:hover{
-    transform: scale(0.98);
+.btnartikel p{
+    margin: 0px;
     color: #666699;
     text-decoration: none;
+}
+.btnartikel :hover{
+    text-decoration: none;
+    background-color: #666699;
+    color: white;
 }
 .icon{
     font-size: 40px;
@@ -54,6 +64,7 @@ p{
     padding-left: 20px;
 }
 .box{
+    width: 100%;
     display: flex;
     align-items: center;
     padding: 1%;
@@ -61,11 +72,12 @@ p{
     text-align: center;
     color: #666699;
 }
+
 .tp{
     text-align: center;
 }
 .kotak1{
-    width:77%;
+    width:95%;
     border-radius:15px;
     background-color: #666699;
     color: white;
@@ -73,22 +85,13 @@ p{
     padding: 1%;
     box-shadow:0px 0px 10px #666699;
 }
-.kotak2{
-    width:77%;
-    border-radius:15px;
-    border: 2px solid #666699;
-    color: #666699;
-    text-align: center;
-    padding: 1%;
-    box-shadow:0px 0px 10px #666699;
-    align-items: center; 
-}
 .kotak3{
-    width:80%;
+    width:95%;
     border-radius:15px;
     color: #666699;
     text-align: center;
     padding: 1%;
+    box-shadow:0px 0px 10px gray;
 }
 .kotak_skill{
     width: 50px;
@@ -100,10 +103,9 @@ p{
     width: 100%;
     height: auto;
 }
-
 .kotakatur{
     display: flex;
-    justify-content: center;
+    justify-content:space-evenly;
     flex-wrap: wrap;
 }
 .kotak_sertif{
