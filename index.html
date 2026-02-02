@@ -1,200 +1,411 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="image/iconB.png" type="image/png">
-    <title>Portofolio Bagus Tri Sasongko</title>
+    <title>Bagus Tri Sasongko | Portfolio</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="box">
-        <div class="round-container">
-            <img src="image\profil2.jpg" alt="Foto">
-        </div>
-    </div>
-    <div class="box">
-        <div class="fcolor">
-            <div class="padkiri">
-                <h1>Bagus Tri Sasongko</h1>
-                <p class="tp">Mahasiswa Teknik Informatika</p>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">BAGUS<span class="accent-text">TS.</span></a>
+            <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto text-center">
+                    <li class="nav-item"><a class="nav-link px-3" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#tentang">About</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#portofolio">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#skill">Skills</a></li>
+                </ul>
             </div>
         </div>
-    </div>
-    <!---->
-    <div class="box">
-        <div class="kotak1">
-            <h2>Tentang Saya</h2>
-            <p class="pjusty">Saya adalah seorang mahasiswa jurusan Teknik Informatika yang memiliki minat dan keahlian dalam dunia Desain Grafis, Editing Video, Pengembangan Game, Game Aset 2D, Animasi 2D, Pengembangan Website dan Aplikasi Mobile.</p>
-            <h2>About me</h2>
-            <p class="pjusty">I am a student majoring in Informatics Engineering who has interests and expertise in the world of Graphic Design, Video Editing, Game Development, 2D Game Assets, 2D Animation, Website Development and Mobile Applications.</p>
+    </nav>
+
+    <header id="home" class="hero-wrapper d-flex flex-column justify-content-center align-items-center">
+        <div class="container text-center" data-aos="fade-up">
+            <div class="profile-glow mx-auto mb-4">
+                <img src="image/profil2.jpg" alt="Bagus Tri Sasongko" class="profile-main">
+            </div>
+
+            <h1 class="hero-title"> <span class="accent-gradient" id="typed-text"></span></h1>
+            
+            <h2 class="display-name">Bagus Tri Sasongko</h2>
+            <p class="hero-subtitle">Informatics Engineering Graduate | Multimedia Specialist</p>
+        
+            <div class="social-hero mt-4">
+                <a href="https://github.com/Bagusts" target="_blank"><i class="bi bi-github"></i></a>
+                <a href="https://www.instagram.com/_bagusts/" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/bagus-tri-sasongko-7478a61a5/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                <a href="https://www.youtube.com/@Bagusts" target="_blank"><i class="bi bi-youtube"></i></a>
+            </div>
+
+            <div class="mt-5">
+                <a href="#portofolio" class="btn-main-cta">Explore Projects <i class="bi bi-arrow-right-short ml-2"></i></a>
+            </div>
         </div>
-    </div>
-    <!---->
-    <div class="box">
-        <div class="kotak1">
-            <h2>Pendidikan</h2>
-            <div class="kotakatur">
-                <div class="table">
-                    <p>SMK Barunawati Surabaya<p>
+    </header>
+
+    <section id="tentang" class="py-section">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="about-badge mb-3">Get to know me</div>
+                    <h2 class="section-heading">Membangun Solusi dengan <span class="accent-text">Kreativitas & Kode</span></h2>
+                    <p class="text-secondary lead">Lulusan Teknik Informatika yang menjembatani celah antara fungsionalitas teknis dan estetika visual.</p>
+                    <p class="text-secondary pjusty">
+                        Berfokus pada pengembangan solusi digital yang tidak hanya bekerja secara optimal, tetapi juga memberikan pengalaman visual yang memikat. Dengan latar belakang kuat di <strong>Pengembangan Game</strong> dan <strong>Multimedia</strong>, saya terbiasa mengubah ide kompleks menjadi karya digital yang interaktif dan inovatif.
+                    </p>
+                    
+                    <div class="quote-mini mt-4" data-aos="fade-up">
+                        <div class="quote-content">
+                            <i class="bi bi-quote quote-icon-start"></i>
+                            <span class="quote-text">Mengubah ide kompleks menjadi karya digital yang fungsional dan estetik.</span>
+                            <i class="bi bi-quote quote-icon-end"></i>
+                        </div>
+                    </div>
                 </div>
-                <div class="table">
-                    <p>Universitas Muhammadiyah Surabaya</p>
+
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="stats-container">
+                        <div class="stat-card modern">
+                            <div class="stat-icon-box">
+                                <i class="bi bi-mortarboard-fill"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h6>Pendidikan</h6>
+                                <p class="mb-0"><strong>S1 Teknik Informatika</strong></p>
+                                <span class="small opacity-75">UM Surabaya (Graduated)</span>
+                                <hr class="my-2 border-secondary opacity-25">
+                                <p class="mb-0"><strong>Multimedia</strong></p>
+                                <span class="small opacity-75">SMK Barunawati</span>
+                            </div>
+                        </div>
+
+                        <div class="stat-card modern mt-4">
+                            <div class="stat-icon-box">
+                                <i class="bi bi-briefcase-fill"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h6>Pengalaman Kerja</h6> 
+                                <div class="experience-item mb-4">
+                                    <p class="mb-0"><strong>Packaging & Layout Designer</strong></p>
+                                    <span class="small opacity-75">Adnique Offset</span>
+                                    <p class="text-muted mb-0" style="font-size: 0.8rem;">Desain packaging & Persiapan cetak</p>
+                                </div>
+                                
+                                <hr class="my-3 border-secondary opacity-25">
+                                
+                                <div class="experience-item">
+                                    <p class="mb-0"><strong>Creative Staff & Graphic Designer</strong></p>
+                                    <span class="small opacity-75">3M Digital Printing</span>
+                                    <p class="text-muted mb-0" style="font-size: 0.8rem;">Branding & Desain berbagai aset digital</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="stat-card modern mt-4">
+                            <div class="stat-icon-box">
+                                <i class="bi bi-briefcase-fill"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h6>Pengalaman Magang</h6> 
+                                <div class="experience-item">
+                                    <p class="mb-0"><strong>Graphic Designer</strong></p>
+                                    <span class="small opacity-75">Star Digital Printing</span>
+                                    <p class="text-muted mb-0" style="font-size: 0.8rem;">Desain grafis untuk media cetak</p>
+                                </div>
+                                <hr class="my-3 border-secondary opacity-25">
+                                <div class="experience-item">
+                                    <p class="mb-0"><strong>IT Staff</strong></p>
+                                    <span class="small opacity-75">PT POMI (Paiton Operation & Maintenance Indonesia)</span>
+                                    <p class="text-muted mb-0" style="font-size: 0.8rem;">Maintenance sistem & Support IT</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!---->
-    <div class="box">
-        <div class="kotak1">
-            <h2>Pengalaman Kerja</h2>
-            <div class="kotakatur">
-                <div class="table">
-                    <p>Percetakan Offset dan Packaging | Adnique</p>
-                </div>
-                <div class="table">
-                    <p>Percetakan | 3M Digital Printing</p>
-                </div>
+    </section>
+
+    <section id="portofolio" class="py-section bg-alt">
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mb-5">
+                <h2 class="section-heading mb-3 mb-md-0">Portofolio &<span class="accent-text"> Karya</span></h2>
+                <a href="https://www.kompasiana.com/bagusts" class="text-link" target="_blank">Baca Artikel Kompasiana <i class="bi bi-arrow-right"></i></a>
             </div>
-        </div>
-    </div>
-    <!---->
-    <div class="box">
-        <div class="kotak1">
-            <h2>Artikel</h2>
-            <div class="kotakatur">
-                <div class="btnartikel">
-                    <a href="https://www.kompasiana.com/bagusts" >
-                        <p>Kompasiana</p>
+            
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up">
+                    <a href="https://www.youtube.com/watch?v=25rdyQbGlak" class="work-card" target="_blank">
+                        <div class="work-img">
+                            <img src="image/animasi.jpg" alt="Animasi">
+                        </div>
+                        <div class="work-content">
+                            <span class="work-tag">2D Animation</span>
+                            <h5 class="work-title">Bahaya Sampah</h5>
+                        </div>
                     </a>
                 </div>
-            </div>
-        </div>
-    </div>
-    <!---->
-    <div class="box">
-        <div class="kotak3">
-            <h2>Portofolio</h2>
-            <div class="kotakatur">
-                <a href="https://www.youtube.com/watch?v=25rdyQbGlak&t=316s" class="kotak_proyek" target="_blank">
-                    <img src="image/animasi.jpg" class="gambar_proyek">
-                    <h3>Animasi</h3>
-                    <p>Bahaya Sampah</p>
-                </a>
-                <a href="https://www.youtube.com/watch?v=d6NbJWr7sC0" class="kotak_proyek" target="_blank">
-                    <img src="image/revolusi.png">
-                    <h3>Video</h3>
-                    <p>Era Revolusi 4.0</p>
-                </a>
-                <a href="https://www.youtube.com/watch?v=nCeYuMTxPK4&t=136s" class="kotak_proyek" target="_blank">
-                    <img src="image/quiz.jpg">
-                    <h3>Video Tutorial</h3>
-                    <p>123 Form Builder & Quiz Maker</p>
-                </a>
-                <a href="https://nizar07.itch.io/witch-and-parasite" class="kotak_proyek" target="_blank">
-                    <img src="image/witchprst.JPG">
-                    <h3>Game</h3>
-                    <p>Witch vs Parasite</p>
-                </a>
-                <a href="https://nizar07.itch.io/escape-from-school" class="kotak_proyek" target="_blank">
-                    <img src="image/game.png">
-                    <h3>Game</h3>
-                    <p>Escape From School</p>
-                </a>
-                <a href="https://bagusts.itch.io/escape-from-basement" class="kotak_proyek" target="_blank">
-                    <img src="image/escapeformbasement.JPG">
-                    <h3>Game</h3>
-                    <p>Escape From Basement</p>
-                </a>
-                <a class="kotak_proyek">
-                    <img src="image/a1.png">
-                    <h3>Aplikasi</h3>
-                    <p>Learning Arabic (Lera)</p>
-                </a>
-                <a class="kotak_proyek">
-                    <img src="image/x1.JPG">
-                    <h3>Website</h3>
-                    <p>Klinik Hewan "Arum Pet Care"</p>
-                </a>
-            </div>
-        </div>
-    </div>
-    <!---->
-    <div class="box">
-        <div class="kotak1">
-            <h2>Kemampuan Saya</h2>
-            <p>Multimedia :</p>
-            <div class="kotakatur">
-                <div class="kotak_skill">
-                    <img src="image/adobe1.png" alt="Adobe Ilustrator">
+
+                <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up">
+                    <a href="https://www.youtube.com/watch?v=25rdyQbGlak" class="work-card" target="_blank">
+                        <div class="work-img">
+                            <img src="image/revolusi.png" alt="Animasi">
+                        </div>
+                        <div class="work-content">
+                            <span class="work-tag">Educational videos</span>
+                            <h5 class="work-title">Era Revolusi 4.0</h5>
+                        </div>
+                    </a>
                 </div>
-                <div class="kotak_skill">
-                    <img src="image/adobe2.png" alt="Adobe Photoshop">
+                <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up">
+                    <a href="https://www.youtube.com/watch?v=25rdyQbGlak" class="work-card" target="_blank">
+                        <div class="work-img">
+                            <img src="image/quiz.jpg" alt="Animasi">
+                        </div>
+                        <div class="work-content">
+                            <span class="work-tag">Educational videos</span>
+                            <h5 class="work-title">123 From Builder  & Quiz Maker</h5>
+                        </div>
+                    </a>
                 </div>
-                <div class="kotak_skill">
-                    <img src="image/adobe3.png" alt="Adobe Premiere Pro">
+                <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <a href="https://nizar07.itch.io/escape-from-school" class="work-card" target="_blank">
+                        <div class="work-img">
+                            <img src="image/game.png" alt="Game">
+                        </div>
+                        <div class="work-content">
+                            <span class="work-tag">Game Dev</span>
+                            <h5 class="work-title">Escape From School</h5>
+                        </div>
+                    </a>
                 </div>
-                <div class="kotak_skill">
-                    <img src="image/adobe4.png" alt="Adobe After Effect">
+                <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <a href="https://bagusts.itch.io/escape-from-basement" class="work-card" target="_blank">
+                        <div class="work-img">
+                            <img src="image/escapeformbasement.JPG" alt="Game">
+                        </div>
+                        <div class="work-content">
+                            <span class="work-tag">Game Dev</span>
+                            <h5 class="work-title">Escape From Basement</h5>
+                        </div>
+                    </a>
                 </div>
-                <div class="kotak_skill">
-                    <img src="image/canva.png" alt="Adobe After Effect">
+                <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <a href="https://nizar07.itch.io/witch-and-parasite" class="work-card" target="_blank">
+                        <div class="work-img">
+                            <img src="image/witchprst.JPG" alt="Game">
+                        </div>
+                        <div class="work-content">
+                            <span class="work-tag">Game Dev</span>
+                            <h5 class="work-title">Witch vs Parasite</h5>
+                        </div>
+                    </a>
                 </div>
-            </div>
-            <br>
-            <p>Pemrograman :</p>
-            <div class="kotakatur">
-                <div class="kotak_skill">
-                    <img src="image/prog1.png" alt="HTML">
+
+                <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="work-card">
+                        <div class="work-img">
+                            <img src="image/a1.png" alt="App">
+                        </div>
+                        <div class="work-content">
+                            <span class="work-tag">Mobile App</span>
+                            <h5 class="work-title">Learning Arabic</h5>
+                        </div>
+                    </div>
                 </div>
-                <div class="kotak_skill">
-                    <img src="image/prog2.png" alt="CSS">
+
+                <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="work-card">
+                        <div class="work-img">
+                            <img src="image/x1.JPG" alt="Web">
+                        </div>
+                        <div class="work-content">
+                            <span class="work-tag">Web Dev</span>
+                            <h5 class="work-title">Arum Pet Care</h5>
+                        </div>
+                    </div>
                 </div>
-                <div class="kotak_skill">
-                    <img src="image/prog3.png" alt="JavaScript">
-                </div>
-                <div class="kotak_skill">
-                    <img src="image/android.png" alt="JavaScript">
-                </div>
-                <div class="kotak_skill">
-                    <img src="image/godot.png" alt="JavaScript">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!---->
-    <div class="box">
-        <div class="kotak3">
-            <h2>Sertifikat</h2>
-            <div class="kotakatur">
-                <div class="kotak_sertif">
-                    <img src="image/sertif1.jpg" class="gambar_proyek">
-                </div>
-                <div class="kotak_sertif">
-                    <img src="image/sertif2.jpg" class="gambar_proyek">
-                </div>
-                <div class="kotak_sertif">
-                    <img src="image/sertif3.jpg" class="gambar_proyek">
+
+                <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="work-card">
+                        <div class="work-img">
+                            <img src="image/teduhin.png" alt="App">
+                        </div>
+                        <div class="work-content">
+                            <span class="work-tag">Mobile App</span>
+                            <h5 class="work-title">Teduhin</h5>
+                        </div>
+                    </div>
                 </div>
 
             </div>
         </div>
-    </div>
-    <!---->
-    <footer class="footer">
-            <h2>Social Media</h2>
-            <a href="" target="_blank">
-                <i class="bi bi-github icon"></i></a>
-            <a href="https://www.instagram.com/_bagusts/?hl=en" target="_blank">
-                <i class="bi bi-instagram icon"></i></a>
-            <a href="https://www.linkedin.com/in/bagus-tri-sasongko-7478a61a5/" target="_blank">
-                <i class="bi bi-linkedin icon"></i></a>
-            <a href="https://www.youtube.com/@Bagusts" target="_blank">
-                <i class="bi bi-youtube icon"></i></i></a>
-            <p>Kontak : bagustri991@gmail.com</p>
-        <p>&copy; Website Portofolio | Bagus Tri Sasongko</p>
+    </section>
+
+    <section id="skill" class="py-section">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-heading">Keahlian & <span class="accent-text">Teknologi</span></h2>
+                <p class="text-secondary">Kombinasi kreativitas visual dan fungsionalitas teknologi yang inovatif.</p>
+            </div>
+            
+            <div class="skill-wrapper mb-5">
+                <div class="category-header" data-aos="fade-right">
+                    <span class="dot"></span>
+                    <p class="skill-label">Kreatif & Multimedia</p>
+                </div>
+                <div class="skill-flex" data-aos="fade-up">
+                    <div class="skill-pill"><img src="image/adobe1.png"> <span>Illustrator</span></div>
+                    <div class="skill-pill"><img src="image/adobe2.png"> <span>Premiere Pro</span></div>
+                    <div class="skill-pill"><img src="image/adobe3.png"> <span>Photoshop</span></div>
+                    <div class="skill-pill"><img src="image/adobe4.png"> <span>Photoshop</span></div>
+                    <div class="skill-pill"><img src="image/capcut.png"> <span>CapCut</span></div>
+                    <div class="skill-pill"><img src="image/canva.png"> <span>Canva</span></div>
+                </div>
+            </div>
+
+            <div class="skill-wrapper">
+                <div class="category-header" data-aos="fade-right">
+                    <span class="dot"></span>
+                    <p class="skill-label">Teknologi & Pemrograman</p>
+                </div>
+                <div class="skill-flex" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-pill"><img src="image/prog1.png"> <span>HTML</span></div>
+                    <div class="skill-pill"><img src="image/prog2.png"> <span>CSS</span></div>
+                    <div class="skill-pill"><img src="image/prog3.png"> <span>JavaScript</span></div>
+                    <div class="skill-pill"><img src="image/python.png"> <span>Python</span></div>
+                    <div class="skill-pill"><img src="image/android.png"> <span>Android Studio</span></div>
+                    <div class="skill-pill"><img src="image/godot.png"> <span>Godot Engine</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sertifikat" class="py-section">
+        <div class="container text-center">
+            <h2 class="section-heading mb-2" data-aos="fade-up">Sertifikasi & <span class="accent-text">Penghargaan</span></h2>
+            <p class="text-secondary mb-5" data-aos="fade-up">Bukti kompetensi dan dedikasi dalam pengembangan profesional.</p>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in">
+                    <div class="cert-card">
+                        <img src="image/sertif1.jpg" alt="Sertifikat 1" class="img-cert">
+                        <div class="cert-overlay">
+                            <div class="cert-info">
+                                <h6 class="mb-0">Sertifikat Kompetensi</h6>
+                                <small>Penerbit Sertifikat</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="cert-card">
+                        <img src="image/sertif2.jpg" alt="Sertifikat 2" class="img-cert">
+                        <div class="cert-overlay">
+                            <div class="cert-info">
+                                <h6 class="mb-0">Pelatihan Multimedia</h6>
+                                <small>Instansi Terkait</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer py-5 bg-alt">
+        <div class="container">
+            <div class="footer-content text-center">
+                <div class="footer-brand mb-4" data-aos="fade-up">
+                    <h3 class="accent-text mb-2">Bagus Tri Sasongko</h3>
+                    <p class="text-secondary small">Membangun harmoni antara kode dan estetika visual.</p>
+                </div>
+
+                <div class="footer-socials mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <a href="https://github.com/Bagusts" target="_blank" class="social-link" title="GitHub"><i class="bi bi-github"></i></a>
+                    <a href="https://www.instagram.com/_bagusts/" target="_blank" class="social-link" title="Instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/bagus-tri-sasongko-7478a61a5/" target="_blank" class="social-link" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://www.youtube.com/@Bagusts" target="_blank" class="social-link" title="YouTube"><i class="bi bi-youtube"></i></a>
+                    <a href="mailto:bagustri991@gmail.com" target="_blank" class="social-link" title="Email"><i class="bi bi-envelope-fill"></i></a>
+                </div>
+
+                <hr class="footer-divider">
+
+                <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center mt-4">
+                    <p class="text-secondary small mb-3 mb-md-0">&copy; 2026 Bagus Tri Sasongko. Hak Cipta Dilindungi.</p>
+                    <div class="footer-meta small text-secondary">
+                        <span>Estetika Digital & Inovasi.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true, duration: 1000 });
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('.navbar');
+            if (window.scrollY > 50) nav.classList.add('nav-scrolled');
+            else nav.classList.remove('nav-scrolled');
+        });
+
+        const words = [
+            "Graphic Designer", 
+            "Website Developer", 
+            "Android Developer", 
+            "Multimedia Specialist",
+            "Creative Engineer"
+        ];
+
+        let wordIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        const typedTextElement = document.getElementById("typed-text");
+
+        function typeEffect() {
+            const currentWord = words[wordIndex];
+            
+            if (isDeleting) {
+                typedTextElement.textContent = currentWord.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                typedTextElement.textContent = currentWord.substring(0, charIndex + 1);
+                charIndex++;
+            }
+
+            let typeSpeed = isDeleting ? 40 : 80;
+
+            if (!isDeleting && charIndex === currentWord.length) {
+                typeSpeed = 1500;
+                isDeleting = true;
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                wordIndex = (wordIndex + 1) % words.length;
+                typeSpeed = 500;
+            }
+
+            setTimeout(typeEffect, typeSpeed);
+        }
+
+        document.addEventListener("DOMContentLoaded", typeEffect);
+    </script>
 </body>
 </html>
